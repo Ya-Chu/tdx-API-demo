@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>離我最近的Youbike站點</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">   
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+crossorigin=""></script>
+
+<script type="text/javascript" src="Leaflet.Icon.Glyph.js"></script>
+<link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
+<style>
+    #map { 
+        height: 60vh; 
+        width: 100%;
+}
+</style>
+</head>
+<body>
+<!-- http://127.0.0.1:5500/nearby/nearby.html -->   
+    
+<h1 class="text-center text-white bg-info fixed-top">顯示離我最近的Youbike站點</h1>
+
+<div class="container">
+        <div class="row mt-5 mb-2">
+            <p></p>
+            <ol class="list list-group list-group-numbered">
+                <!-- 這是我們想看到的畫面顯示 -->
+                <li>美麗島腳踏車站 可租7 可還8</li>
+            </ol>
+            <p></p>
+        </div>
+        <div class="row">
+            <div id="map"></div>
+        </div>
+</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="nearby.js"></script>
+</body>
+</html>
