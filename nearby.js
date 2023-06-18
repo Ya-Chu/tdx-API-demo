@@ -10,7 +10,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibWVnYW40Z3NkIiwiYSI6ImNsOXM1ZjRocTA4NWIzcXBvZDFoY2d3MDIifQ.ljoVvi0M0l5m3BuXXfB3NA'
+    accessToken: 'your token'
     }).addTo(map);
 const list = document.querySelector(".list");
 
@@ -24,8 +24,8 @@ $(function () {
 function GetAuthorizationHeader() {    
     const parameter = {
         grant_type:"client_credentials",
-        client_id: "megan4gsd-2a6bc14c-095a-4417",
-        client_secret: "d23a92f7-c5ee-4627-92dd-fafea4affdf3"
+        client_id: "your id",
+        client_secret: "your token"
     };
     let auth_url = "https://tdx.transportdata.tw/auth/realms/TDXConnect/protocol/openid-connect/token";
         
